@@ -1,0 +1,63 @@
+/* Cacher la scrollbar pour tous les navigateurs */
+body {
+  overflow-y: auto;
+  -ms-overflow-style: none;  /* IE et Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari et Opera */
+}
+
+/* Alternative : appliquer sur html et body */
+html {
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+
+.animate-scroll-slow {
+  animation: scroll linear infinite;
+}
+
+/* Alternative: Si vous préférez une animation plus fluide */
+@keyframes scrollSmooth {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 1.5rem));
+  }
+}
+
+/* Assurez-vous que le conteneur parent a overflow-hidden */
+.logo-loop-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
