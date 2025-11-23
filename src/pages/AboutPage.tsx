@@ -3,9 +3,9 @@ export const AboutPage = () => {
 
     return (
 
-        <div className='pt-20 lg:px-8 min-h-screen flex justify-around items-center'>
+        <div className='lg:px-8 min-h-screen flex justify-around items-center'>
 
-            <div className='w-1/2 '>
+            <div className='w-1/2'>
                 <div className="relative flex items-center justify-center">
                     <div className="absolute top-0 right-0 w-96 h-96 bg-[#f5e6d3] rounded-full -z-10"></div>
                     <div className="relative">
