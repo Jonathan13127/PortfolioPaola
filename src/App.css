@@ -9,13 +9,6 @@ body::-webkit-scrollbar {
   display: none;  /* Chrome, Safari et Opera */
 }
 
-/* Alternative : appliquer sur html et body */
-html {
-  overflow-y: auto;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
 html::-webkit-scrollbar {
   display: none;
 }

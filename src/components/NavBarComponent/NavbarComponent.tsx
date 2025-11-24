@@ -19,44 +19,35 @@ const NavBarComponent: React.FC = () => {
     ];
 
     return (
-        <header className="fixed w-full bg-white z-20 border-black border-b-2">
+        <header className="sticky top-0 w-full bg-white z-50 border-black border-b-2 p-3">
 
-            <div className="hidden lg:flex w-full h-30">
-                <nav className="w-full border-gray-200 shadow-sm">
-                    <div className="w-full px-4 sm:px-6 lg:px-8">
-                        <div className="w-full flex items-center h-30">
-
-                            {/* --- Colonne gauche : LOGO --- */}
-                            <div className="w-100 flex items-center">
-                                <div className="w-16 h-16 flex items-center justify-center">
-                                    <img src={Sun} alt="Logo" className="" />
-
-                                </div>
-                            </div>
-
-                            {/* --- Colonne centre : Liens --- */}
-                            <div className="flex-1 flex">
-                                <div className="px-12 hidden md:flex justify-between items-center w-full">
-                                    {navItems.map((item) => (
-                                        <a
-                                            key={item.href}
-                                            href={item.href}
-                                            onClick={() => setActiveItem(item.href)}
-                                            className={`text-2xl font-normal transition-colors duration-200 hover:font-semibold ${activeItem === item.href
-                                                    ? 'text-black font-bold'
-                                                    : ''
-                                                }`}
-                                        >
-                                            {item.label}
-                                        </a>
-                                    ))}
-                                </div>
-                            </div>
-
-                        </div>
+            <nav className="w-full h-auto flex items-center">
+                {/* --- Colonne gauche : LOGO --- */}
+                <div className="w-100 flex items-center">
+                    <div className="w-16 h-16 flex items-center justify-center">
+                        <img src={Sun} alt="Logo" className="" />
                     </div>
-                </nav>
-            </div>
+                </div>
+
+                {/* --- Colonne centre : Liens --- */}
+                <div className="flex-1 flex">
+                    <div className="hidden md:flex justify-between items-center w-full">
+                        {navItems.map((item) => (
+                            <a
+                                key={item.href}
+                                href={item.href}
+                                onClick={() => setActiveItem(item.href)}
+                                className={`text-base font-normal transition-colors duration-200 hover:font-semibold ${activeItem === item.href
+                                    ? 'text-black font-bold'
+                                    : ''
+                                    }`}
+                            >
+                                {item.label}
+                            </a>
+                        ))}
+                    </div>
+                </div>
+            </nav>
 
             <div className="lg:hidden w-full flex items-center justify-between h-30 px-6">
 

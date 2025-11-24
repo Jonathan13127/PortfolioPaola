@@ -3,7 +3,7 @@ export const AboutPage = () => {
 
     return (
 
-        <div className='lg:px-8 min-h-screen flex justify-around items-center'>
+        <div className='lg:px-8 flex justify-around items-center'>
 
             <div className='w-1/2'>
                 <div className="relative flex items-center justify-center">

@@ -20,17 +20,17 @@ function App() {
 
   return (
     <>
-
-      <div className='hidden md:block w-full min-h-screen bg-white'>
+      <div className='w-full min-h-screen bg-white'>
 
         <NavBarComponent />
 
-        <div style={{ background: config.colors.primary }}
-          className={`pt-20 min-h-screen`}>
+        <div style={{ background: config.colors.primary }} className='w-full'>
 
-          <HomePage />
+          <section>
+            <HomePage />
+          </section>
 
-          <section id='about' className='bg-white flex flex-col justify-around min-h-screen'>
+          <section id='about' className='bg-white flex flex-col justify-around'>
             <AboutPage />
           </section>
 
@@ -60,14 +60,6 @@ function App() {
         </div>
 
       </div>
-
-      <div style={{ background: config.colors.primary }}
-        className='md:hidden min-h-screen flex items-center justify-center text-lg'>
-          <span className='font-semibold text-center px-20'>
-            Merci d'utilisez un écran plus grand pour voir le portfolio de Paola
-          </span>
-      </div>
-
     </>
   )
 }
