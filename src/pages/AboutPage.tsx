@@ -7,7 +7,7 @@ import Paola from "../assets/Paola.webp"
 export const AboutPage = () => {
 
     return (
-        <div className='px-4 pb-6 lg:px-8 flex-col flex justify-center md:flex-row w-full min-h-screen gap-6 md:gap-0'>
+        <div className='px-4 pb-6 lg:px-8 flex flex-col justify-center md:flex-row w-full h-screen gap-12 md:gap-0'>
 
             <FadeInSection className='order-2 md:order-1 w-full md:w-2/5 flex justify-center items-center' delay={500} duration={1000}>
                 <div className='w-full flex justify-center px-4'>
@@ -27,17 +27,17 @@ export const AboutPage = () => {
                 </div>
             </FadeInSection>
 
-            <div className='order-1 md:order-2 w-full md:w-2/3 h-full flex flex-1 flex-col justify-start items-center'>
+            <div className='order-1 md:order-2 w-full md:w-2/3 h-auto flex flex-col justify-center xl:justify-start items-center '>
 
-                <FadeInSection className='z-10 w-full' delay={100} duration={1000}>
+                <FadeInSection className='z-10 w-full h-auto' delay={100} duration={1000}>
                     <div className="w-full h-auto flex justify-center items-end gap-6">
                         <p
-                            className="text-8xl lg:text-[10rem]"
+                            className="text-8xl lg:text-[10rem] xl:text-[12rem] 2xl:text-[14rem]"
                             style={{ fontFamily: "Hello Paris", lineHeight: 1 }}
                         >
                             H
                             <span
-                                className="text-7xl lg:text-[6rem]"
+                                className="text-7xl lg:text-[6rem] xl:text-[10rem]"
                                 style={{ fontFamily: "The Seasons", lineHeight: 1 }}
                             >
                                 ello!
@@ -45,7 +45,7 @@ export const AboutPage = () => {
                         </p>
 
                         <p
-                            className="mb-2 text-7xl lg:text-[6rem]"
+                            className="text-7xl lg:text-[7rem] xl:text-[8rem] 2xl:text-[9rem] "
                             style={{ fontFamily: "The Seasons", lineHeight: 1 }}
                         >
                             I
@@ -57,7 +57,7 @@ export const AboutPage = () => {
                 </FadeInSection>
 
                 <FadeInSection delay={100} duration={1000}>
-                    <div className='text-xl sm:text-3xl w-auto px-10 py-3 rounded-full rotate-4'
+                    <div className='text-xl sm:text-3xl w-auto px-10 py-3 rounded-full rotate-4 md:text-5xl'
                         style={{
                             backgroundColor: config.colors.badgeColor,
                             fontFamily: 'The Seasons'
@@ -67,7 +67,7 @@ export const AboutPage = () => {
                 </FadeInSection>
 
                 <FadeInSection className='mt-10 sm:mt-12 w-full' delay={1000} duration={1000}>
-                    <div className="w-full space-y-8 text-lg text-gray-800 leading-relaxed">
+                    <div className="w-full space-y-8 text-lg xl:text-3xl text-gray-800 leading-relaxed">
                         <p className="text-justify" style={{ fontFamily: 'Agrandir' }}>
                             Jeune diplômée d'un Master en communication, je cherche à rejoindre
                             une équipe où <strong>créativité</strong> rime avec{' '}
