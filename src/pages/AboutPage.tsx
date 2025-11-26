@@ -7,7 +7,7 @@ import Paola from "../assets/Paola.webp"
 export const AboutPage = () => {
 
     return (
-        <div className='px-4 pb-6 lg:px-8 flex flex-col justify-center md:flex-row w-full h-screen gap-12 md:gap-0'>
+        <div className='px-4 pb-6 lg:px-8 flex flex-col justify-center md:flex-row w-full min-h-screen gap-12 md:gap-0'>
 
             <FadeInSection className='order-2 md:order-1 w-full md:w-2/5 flex justify-center items-center' delay={500} duration={1000}>
                 <div className='w-full flex justify-center px-4'>
