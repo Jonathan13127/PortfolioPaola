@@ -5,6 +5,11 @@ body {
   scrollbar-width: none;  /* Firefox */
 }
 
+/* Ajoutez ceci à votre fichier CSS principal */
+html {
+  scroll-behavior: smooth; /* 👈 C'EST TOUT CE DONT VOUS AVEZ BESOIN */
+}
+
 body::-webkit-scrollbar {
   display: none;  /* Chrome, Safari et Opera */
 }
