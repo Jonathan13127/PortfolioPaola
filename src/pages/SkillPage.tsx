@@ -26,7 +26,7 @@ export const SkillPage = () => {
     return (
         <div className="min-h-screen flex flex-col justify-start items-cente px-6">
 
-            <div className='w-full h-full flex-col flex lg:flex-row justify-around items-center gap-10'>
+            <div className='w-full h-full flex-col flex xl:flex-row justify-around items-center gap-10'>
 
                 <FadeInSection className="w-auto h-full" delay={100} duration={1000}>
 

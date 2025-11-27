@@ -13,22 +13,22 @@ import { FadeInSection } from './components/FadeInSection';
 function App() {
 
   const topics = [
-    { node: <div style={{ background: config.colors.badgeColor, fontFamily:'Agrandir' }} className='rounded-full py-3 px-5 text-xs sm:text-xl rotate-2 font-thin'>
+    { node: <div style={{ background: config.colors.logoLoopColor, fontFamily:'Agrandir' }} className='rounded-full py-3 px-5 text-xs sm:text-xl rotate-2 font-thin'>
       COMMUNITY MANAGEMENT
       </div>, title: "", href: '' },
-    { node: <div style={{ background: config.colors.badgeColor, fontFamily:'Agrandir' }} className='rounded-full py-3 px-5 text-xs sm:text-xl -rotate-3 font-thin'>
+    { node: <div style={{ background: config.colors.logoLoopColor, fontFamily:'Agrandir' }} className='rounded-full py-3 px-5 text-xs sm:text-xl -rotate-3 font-thin'>
       BRAND CONTENT
       </div>, title: "", href: '' },
-    { node: <div style={{ background: config.colors.badgeColor, fontFamily:'Agrandir' }} className='rounded-full py-3 px-5 text-xs sm:text-xl p-5 rotate-2 font-thin'>
+    { node: <div style={{ background: config.colors.logoLoopColor, fontFamily:'Agrandir' }} className='rounded-full py-3 px-5 text-xs sm:text-xl p-5 rotate-2 font-thin'>
       SMA
       </div>, title: "", href: '' },
-    { node: <div style={{ background: config.colors.badgeColor, fontFamily:'Agrandir' }} className='rounded-full py-3 px-5 text-xs sm:text-xl p-5 -rotate-3 font-thin'>
+    { node: <div style={{ background: config.colors.logoLoopColor, fontFamily:'Agrandir' }} className='rounded-full py-3 px-5 text-xs sm:text-xl p-5 -rotate-3 font-thin'>
       PRESSE & INFLUENCE
       </div>, title: "", href: '' },
-    { node: <div style={{ background: config.colors.badgeColor, fontFamily:'Agrandir' }} className='rounded-full py-3 px-5 text-xs sm:text-xl p-5 rotate-2 font-thin'>
+    { node: <div style={{ background: config.colors.logoLoopColor, fontFamily:'Agrandir' }} className='rounded-full py-3 px-5 text-xs sm:text-xl p-5 rotate-2 font-thin'>
       PRINT
       </div>, title: "", href: '' },
-    { node: <div style={{ background: config.colors.badgeColor, fontFamily:'Agrandir' }} className='rounded-full py-3 px-5 text-xs sm:text-xl p-5 -rotate-3 font-thin'>
+    { node: <div style={{ background: config.colors.logoLoopColor, fontFamily:'Agrandir' }} className='rounded-full py-3 px-5 text-xs sm:text-xl p-5 -rotate-3 font-thin'>
       EVENT
       </div>, title: "", href: '' },
   ];
@@ -73,7 +73,7 @@ function App() {
             fadeOut={false}
             fadeOutColor="#ffffff"
             ariaLabel="Centre d'intérêts"
-            className='h-full py-5 gap-4'
+            className='h-full py-5 gap-4 text-white'
           />
 
         </div>

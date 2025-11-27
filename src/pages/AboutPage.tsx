@@ -7,14 +7,14 @@ import Paola from "../assets/Paola.webp"
 export const AboutPage = () => {
 
     return (
-        <div className='px-4 pb-6 lg:px-8 flex flex-col justify-center md:flex-row w-full min-h-screen gap-12 md:gap-0'>
+        <div className='px-4 pb-6 lg:px-8 flex flex-col justify-start items-center xl:flex-row w-full h-screen gap-12 md:gap-0'>
 
-            <FadeInSection className='order-2 md:order-1 w-full md:w-2/5 flex justify-center items-center' delay={500} duration={1000}>
+            <FadeInSection className='order-2 xl:order-1 w-full xl:w-2/5 flex justify-center items-center md:mt-6 xl:mt-0' delay={500} duration={1000}>
                 <div className='w-full flex justify-center px-4'>
                     <div className="relative">
                         <div className="relative">
                             <div className="bg-[#f2f2f2] p-4 sm:p-6 md:p-8 pb-12 sm:pb-16 md:pb-22 transform rotate-3 sm:rotate-5">
-                                <div className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80">
+                                <div className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-90 lg:h-90 xl:w-100 xl:h-100">
                                     <img
                                         src={Paola}
                                         alt="Paola Malfitano"
@@ -27,12 +27,12 @@ export const AboutPage = () => {
                 </div>
             </FadeInSection>
 
-            <div className='order-1 md:order-2 w-full md:w-2/3 h-auto flex flex-col justify-center xl:justify-start items-center '>
+            <div className='order-1 xl:order-2 w-full xl:w-2/3 h-auto flex flex-col items-center xl:self-start'>
 
                 <FadeInSection className='z-10 w-full h-auto' delay={100} duration={1000}>
                     <div className="w-full h-auto flex justify-center items-end gap-6">
                         <p
-                            className="text-8xl lg:text-[10rem] xl:text-[12rem] 2xl:text-[14rem]"
+                            className="text-8xl lg:text-[10rem] xl:text-[14rem] 2xl:text-[16rem]"
                             style={{ fontFamily: "Hello Paris", lineHeight: 1 }}
                         >
                             H
@@ -57,7 +57,7 @@ export const AboutPage = () => {
                 </FadeInSection>
 
                 <FadeInSection delay={100} duration={1000}>
-                    <div className='text-xl sm:text-3xl w-auto px-10 py-3 rounded-full rotate-4 md:text-5xl'
+                    <div className='text-xl md:text-3xl w-auto px-10 py-3 rounded-full rotate-4 lg:text-5xl'
                         style={{
                             backgroundColor: config.colors.badgeColor,
                             fontFamily: 'The Seasons'
@@ -67,7 +67,7 @@ export const AboutPage = () => {
                 </FadeInSection>
 
                 <FadeInSection className='mt-10 sm:mt-12 w-full' delay={1000} duration={1000}>
-                    <div className="w-full space-y-8 text-lg xl:text-3xl text-gray-800 leading-relaxed">
+                    <div className="w-full space-y-8 text-lg 2xl:text-3xl text-gray-800 leading-relaxed">
                         <p className="text-justify" style={{ fontFamily: 'Agrandir' }}>
                             Jeune diplômée d'un Master en communication, je cherche à rejoindre
                             une équipe où <strong>créativité</strong> rime avec{' '}

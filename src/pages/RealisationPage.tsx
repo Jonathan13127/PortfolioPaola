@@ -5,7 +5,7 @@ import { config } from '../config/config'
 export const RealisationPage = () => {
 
     return (
-        <div className="min-h-screen w-full flex flex-col gap-8 px-8 pb-8" style={{ background: config.colors.primary }}>
+        <div className="min-h-screen w-full flex flex-col gap-8 px-8 pb-8">
 
             <p className="self-center text-center px-8 text-6xl leading-none" style={{ fontFamily: 'The Seasons' }}>
                 <span className="text-8xl" style={{ fontFamily: 'Hello Paris' }}>
@@ -24,17 +24,46 @@ export const RealisationPage = () => {
             </p>
 
             <div className="w-full h-screen">
+                <div className='hidden w-1/2 xl:flex 2xl:justify-center w-full h-full gap-8'>
 
-                <div className='hidden lg:flex w-full h-full'>
-                    <Carousel widthPercent={35} heightPercent={90} backgroundColor='white' autoplay={true} loop={true} />
+                    <Carousel
+                        widthPercent={40}
+                        heightPercent={80}
+                        backgroundColor='white'
+                        autoplay={false}
+                        loop={true}
+                    />
+
+                    <div className='w-1/2'>
+                        <p>
+                            Cette expérience m’a permis de consolider mes compétences en création de contenus,
+                            en gestion des réseaux sociaux et en digital storytelling, tout en contribuant activement
+                            à la visibilité et à la croissance en ligne de l’agence et de ses clients.
+                        </p>
+                    </div>
+
                 </div>
 
                 {/* Mobile et Tablettes */}
-                <div className='md:flex lg:hidden w-full h-full'>
-                    <Carousel widthPercent={100} heightPercent={90} backgroundColor='white' autoplay={true} loop={true} />
+                <div className='md:flex flex-col xl:hidden w-full h-full'>
+                    <Carousel
+                        widthPercent={100}
+                        heightPercent={75}
+                        backgroundColor='white'
+                        autoplay={true}
+                        loop={true}
+                    />
+
+                    <p className='mt-5'>
+                        Cette expérience m’a permis de consolider mes compétences en création de contenus,
+                        en gestion des réseaux sociaux et en digital storytelling, tout en contribuant activement
+                        à la visibilité et à la croissance en ligne de l’agence et de ses clients.
+                    </p>
                 </div>
 
+
             </div>
+
         </div>
     )
 }

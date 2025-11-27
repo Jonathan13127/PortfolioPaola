@@ -116,6 +116,7 @@ export default function Carousel({
   const itemHeight = dimensions.height - containerPadding * 2 - dotHeight -  containerPadding;
   const GAP = dimensions.width * 0.04;
   const trackItemOffset = itemWidth + GAP;
+  
 
   // Handle hover events
   useEffect(() => {
@@ -200,9 +201,7 @@ export default function Carousel({
   return (
     <div
       ref={containerRef}
-      className={`relative overflow-hidden ${
-        round ? 'rounded-full border border-white' : 'rounded-3xl border border-neutral-800'
-      }`}
+      className={'relative overflow-hidden rounded-3xl border border-neutral-800'}
       style={{
         background: backgroundColor,
         width: `${widthPercent}%`,
@@ -237,21 +236,21 @@ export default function Carousel({
           return (
             <motion.div
               key={`${item.id}-${index}`}
-              className={`relative shrink-0 flex flex-col ${'items-start justify-between bg-neutral-800 border border-neutral-700 rounded-2xl'
-              } overflow-hidden cursor-grab active:cursor-grabbing`}
+              className={`relative shrink-0 flex flex-col ${'items-start justify-between bg-neutral-800 border border-neutral-700 rounded-2xl'} 
+              overflow-hidden cursor-grab active:cursor-grabbing`}
               style={{
-                width: itemWidth,
+                width: itemWidth ,
                 height: itemHeight,
                 rotateY: rotateY,
                 transformStyle: 'preserve-3d',
                 backfaceVisibility: 'hidden',
-                padding: round ? `${containerPadding * 2}px` : `${containerPadding}px`
+                padding: `${containerPadding}px`
               }}
               transition={effectiveTransition}
             >
               <div className="w-full">
                 <div 
-                  className={`mb-1 font-black text-white ${round ? 'text-center' : ''}`}
+                  className={`mb-1 font-black text-white }`}
                   style={{ fontSize: `${titleFontSize}px` }}
                 >
                   {item.title}
